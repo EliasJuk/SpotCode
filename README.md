@@ -27,15 +27,41 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
 <p>
 
+
+<p align="center">
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
 ---
+
+## 💻 Project
+
+---
+
+## :rocket: Technologies
+
+This project was developed with the following technologies:
 
 - NodeJS
 - Ruby
     - [devise](https://github.com/heartcombo/devise)
 - React
 
+---
 
-# A guide to setting up a Ruby on Rails development environment
+## ❔ How to contribute
+
+- Make a fork;
+- Create a branck with your feature: `git checkout -b my-feature`;
+- Commit changes: `git commit -m 'feat: My new feature'`;
+- Make a push to your branch: `git push origin my-feature`.
+
+After merging your receipt request to done, you can delete a branch from yours.
+
+---
+
+## A guide to setting up a Ruby on Rails development environment
 
 - https://gorails.com/setup/ubuntu/19.10
 
