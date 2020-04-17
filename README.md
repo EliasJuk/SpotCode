@@ -39,6 +39,8 @@
 
 ## 💻 Project
 
+<p align="center">Criado um PWA inspirado no Spotify com Rails e React!</p>
+
 ---
 
 ## :rocket: Technologies
@@ -47,7 +49,9 @@ This project was developed with the following technologies:
 
 - NodeJS
 - Ruby
-    - [devise](https://github.com/heartcombo/devise)
+    - Rails
+    - [Devise](https://github.com/heartcombo/devise)
+    - [ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html)
 - React
 
 ---
@@ -78,6 +82,11 @@ After merging your receipt request to done, you can delete a branch from yours.
 
 > /LocalState/rootfs/home/seu-usuario
 
+---
+
+### SEED
+
+- [SEED](https://drive.google.com/file/d/1MxaS4GkzMXJK7WqmKmfO-XDsbY5I5Nmi/view)
 
 ---
 
