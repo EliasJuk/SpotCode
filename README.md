@@ -2,6 +2,12 @@
     <img alt="spotcode" title="#spotcode" src="readme/logo.png"/>
 </h4>
 
+<h4 align="center"> 
+  🚀 Application developed during the Full Stack School by OneBitCode 🚀
+</h4>
+
+---
+
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/spotcode">	
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasJuk/spotcode">
@@ -21,6 +27,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
 <p>
 
+---
 
 - NodeJS
 - Ruby
