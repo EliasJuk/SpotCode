@@ -31,6 +31,8 @@
 <p align="center">
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-How-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
 </p>
 
 ---
@@ -75,5 +77,12 @@ After merging your receipt request to done, you can delete a branch from yours.
 <p>Para acessar a area de trabalho, ja dentro da pasta do Ubunto você deve acessar os seguintes diretórios:</p>
 
 > /LocalState/rootfs/home/seu-usuario
+
+
+---
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](LICENSE.md) for details.
 
 
