@@ -20,7 +20,7 @@ Rails.application.routes.draw do
       resources :search, only: :index
       resources :albums, only: :show do
         resources :recently_heards, only: :create
-        concerns :favoritable, favoritable_type: 'Song'
+        #concerns :favoritable, favoritable_type: 'Album'
       end
       resources :favorites, only: :index
 
