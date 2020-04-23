@@ -1,0 +1,155 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spotcode",
+		"_postman_id": "744ec500-82d6-9292-5aed-fc8bbf475e74",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"description": "",
+			"item": [
+				{
+					"name": "Search_All",
+					"request": {
+						"url": "http://localhost:3000/api/v1/search",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Query",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3000/api/v1/search?query=ro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "ro",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"description": "",
+			"item": [
+				{
+					"name": "Categories_All",
+					"request": {
+						"url": "http://localhost:3000/api/v1/categories",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Categories_Id",
+					"request": {
+						"url": "http://localhost:3000/api/v1/categories/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Albums",
+			"description": "",
+			"item": [
+				{
+					"name": "Albums_Id",
+					"request": {
+						"url": "http://localhost:3000/api/v1/albums/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Albums_Recently_heards",
+					"request": {
+						"url": "http://localhost:3000/api/v1/albums/2/recently_heards",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"description": "",
+			"item": [
+				{
+					"name": "Favorites",
+					"request": {
+						"url": "http://localhost:3000/api/v1/favorites",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite_Songs",
+					"request": {
+						"url": "http://localhost:3000/api/v1/songs/1/favorite",
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Desfavorite_Songs",
+					"request": {
+						"url": "http://localhost:3000/api/v1/songs/1/favorite",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

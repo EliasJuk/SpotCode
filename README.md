@@ -90,6 +90,11 @@ After merging your receipt request to done, you can delete a branch from yours.
 
 ---
 
+### Routes
+> rails routes | grep album
+
+---
+
 ## :memo: License
 
 This project is under the MIT license. See the [LICENSE](LICENSE.md) for details.
