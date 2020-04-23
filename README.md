@@ -53,6 +53,7 @@ This project was developed with the following technologies:
     - [Devise](https://github.com/heartcombo/devise)
     - [ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html)
 - React
+    - [Bulma](#)
 
 ---
 
@@ -67,7 +68,7 @@ After merging your receipt request to done, you can delete a branch from yours.
 
 ---
 
-## A guide to setting up a Ruby on Rails development environment
+#### How to install Ruby on Rails
 
 - [GoRails](https://gorails.com/setup/)
 
