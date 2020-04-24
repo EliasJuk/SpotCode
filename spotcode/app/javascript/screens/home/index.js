@@ -1,4 +1,4 @@
-import React, { fragment, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 const HomeScreen = () => {
     return(
@@ -8,4 +8,4 @@ const HomeScreen = () => {
     )
 }
 
-export default HomeScreen
+export default HomeScreen;
