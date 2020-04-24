@@ -57,6 +57,12 @@ This project was developed with the following technologies:
 
 ---
 
+## ❔ How to Use
+
+  -  bin/webpack-dev-server
+
+---
+
 ## ❔ How to contribute
 
 - Make a fork;
