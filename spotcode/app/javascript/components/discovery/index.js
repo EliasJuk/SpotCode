@@ -1,0 +1,63 @@
+import React, { Fragment, useEffect, useState } from 'react';
+//import Album from '../common/album';
+import Album from '../album';
+import styled from 'styled-components';
+import { Columns, Heading } from 'react-bulma-components';
+import AlbumsService from '../../services/albums';
+
+const DivVSpaced = styled.div`
+  margin-top: 50px;
+`
+
+const Discovery = () => {
+  const [recent_albums, setRecentAlbums] = useState([]);
+  const [recommend_albums, setRecommendAlbums] = useState([]);
+
+  async function fetchAlbums() {
+    const response = await AlbumsService.index();
+    setRecentAlbums(response.data['recent_albums']);
+    setRecommendAlbums(response.data['recommend_albums']);
+  }
+
+  useEffect(() => {
+    fetchAlbums();
+  }, [])
+ 
+  const recent_albums_components = recent_albums.map((album, key) =>
+    <Columns.Column desktop={{ size: 3 }} mobile={{ size: 6 }} key={album}>
+      <Album artist_name={album.artist_name} title={album.title} cover_url=
+        {album.cover_url} id={album.id} />
+    </Columns.Column> 
+  );
+
+  const recommend_albums_components = recommend_albums.map((album, key) =>
+  <Columns.Column desktop={{ size: 3 }} mobile={{ size: 6 }} key={album}>
+    <Album artist_name={album.artist_name} title={album.title} cover_url=
+      {album.cover_url} key={key} id={album.id} />
+  </Columns.Column>
+  );
+  
+  return (
+    <Fragment>
+      <div>
+        <Heading className='has-text-white' size={4}>
+          Tocadas recentemente
+        </Heading>
+        <Columns className='is-mobile'>
+          {recent_albums_components}
+        </Columns>
+      </div>
+
+      <DivVSpaced>
+        <Heading className='has-text-white' size={4}>
+          Recomemdadas
+        </Heading>
+        <Columns className='is-mobile'>
+          {recommend_albums_components}
+        </Columns>
+      </DivVSpaced>
+    </Fragment>
+  );
+}
+
+export default Discovery;
