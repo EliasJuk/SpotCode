@@ -54,10 +54,30 @@ This project was developed with the following technologies:
     - [ActiveStorage](https://edgeguides.rubyonrails.org/active_storage_overview.html)
 - React
     - [Bulma](#)
+    - [ReactIcons](#)
+    - [StyledComponents](#)
+    - [Axios](#)
 
 ---
 
 ## ❔ How to Use
+
+```bash
+# Install dependencies
+$ yarn install
+
+# Migrate
+$ rails db:migrate
+
+# Seeds
+$ rails db:seed
+
+# Run PWA
+$ rails s
+
+```  
+
+#### RELOAD
 
   -  bin/webpack-dev-server
 
