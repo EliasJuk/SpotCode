@@ -13,21 +13,22 @@ const CustomSubHeading = styled(Heading)`
 `
 
 const Music = (props) => {
-  /*
+  
   let PlayingButton;
   if(props.playing){
     PlayingButton =  <FaStopCircle size='45px' className='has-text-white' 
       onClick={() => props.setPlaying([])} />
   }else {
     PlayingButton =  <FaPlayCircle size='45px' className='has-text-white' 
-      onClick={() => props.setPlaying([props.song])} />
+      onClick={() => props.setPlaying(props.song)} />
   }
-  */
+  
+
   return (
     <Fragment>
       <Columns className='is-vcentered is-mobile is-centered'>
         <Columns.Column desktop={{ size: 1 }} mobile={{ size: 2 }}>
-        <FaPlayCircle size='45px' className='has-text-white' />
+          {PlayingButton}
         </Columns.Column>
         <Columns.Column desktop={{ size: 4 }} mobile={{ size: 8 }}>
           <Columns className='is-vcentered is-mobile'>
