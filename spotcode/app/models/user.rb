@@ -12,4 +12,3 @@ class User < ApplicationRecord
     self.favorites.where(favoritable_type: kind, favoritable_id: id).present?
   end
 end
-
