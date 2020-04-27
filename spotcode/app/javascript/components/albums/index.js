@@ -1,8 +1,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Heading, Columns, Image } from 'react-bulma-components';
 import styled from 'styled-components';
-import AlbumsService from '../../services/albums'
-import { useParams } from 'react-router-dom'
+import AlbumsService from '../../services/albums';
+import { useParams } from 'react-router-dom';
+import Musics from '../musics';
 
 const DivVSpaced = styled.div`
   margin-top: 20px;
@@ -32,7 +33,8 @@ const Albums = () => {
             <Heading size={6} subtitle className='has-text-white'>{album.artist_name}</Heading>
           </DivVSpaced>
         </Columns.Column>
-      </Columns>   
+      </Columns>
+      <Musics songs={album.songs || []}/>
     </Fragment>
   );
 }
