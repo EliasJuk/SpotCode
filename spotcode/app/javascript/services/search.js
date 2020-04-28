@@ -1,7 +1,7 @@
 import Api from './api';
 
 const SearchService = {
-    index: (query) => Api.get(`/seach?query=${query}`)
+  index: (query) => Api.get(`/search?query=${query}`)
 }
 
 export default SearchService;
