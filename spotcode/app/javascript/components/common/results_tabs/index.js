@@ -4,6 +4,11 @@ import styled, { css } from 'styled-components';
 import Album from '../../common/album';
 import Musics from '../../musics';
 
+<div>
+  <a href=""></a>  
+</div>
+  
+
 const CustomTab = styled(Tabs.Tab)`
   a{
     color: white;
@@ -24,7 +29,7 @@ const ResultsTabs = (props) => {
         <Album artist_name={album.artist_name} title={album.title} cover_url={album.cover_url} id={album.id}/>
       </Columns.Column>
   ));
-  }, [props.albums]);
+  }, [props.albums, props.artist_name, props.song]);
 
   return (
     <Fragment>
@@ -33,7 +38,7 @@ const ResultsTabs = (props) => {
         align='centered' size='medium'
       >
         <CustomTab active={active_tab == 'albums' ? true : false} onClick={() => setActiveTab('albums')}>
-          Álbums
+          Albums
       </CustomTab>
         <CustomTab active={active_tab == 'artists' ? true : false} onClick={() => setActiveTab('artists')}>
           Artistas
